@@ -1,27 +1,25 @@
 <?php
 /*
-	Plugin Name: WPRS Widget Legacy
-	Plugin URI: https://wprichsnippets.com/
-	Description: The WPRichSnippets plugin Widget legacy plugin.
-	Version: 1.0
-    Author: Hesham Zebida
-    Author URI: http://zebida.com
+ Plugin Name: WPRS Widget Legacy
+ Plugin URI: https://wprichsnippets.com/
+ Description: The WPRichSnippets plugin Widget legacy plugin.
+ Version: 1.0
+ Author: Hesham Zebida
+ Author URI: http://zebida.com
 	
-	@author   WPRichSnippets
-	@license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
-	@link     https://wprichsnippets.com/
+ @author   WPRichSnippets
+ @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
+ @link     https://wprichsnippets.com/
 */
 	
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
-
 function WPRS_Widget_Legacy_Register() {
     register_widget( 'WPRS_Widget_Legacy' );
 }
 add_action( 'widgets_init', 'WPRS_Widget_Legacy_Register' );
-
 
 	
 class WPRS_Widget_Legacy extends WP_Widget {
